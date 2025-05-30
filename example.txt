@@ -1,0 +1,3 @@
+## Copy the following example to text field to try, include the square brackets.
+["This study investigates novel biomarkers for early detection of lung cancer in non-smokers. Patients with breast cancer and melanoma showed improved outcomes.", "Breast cancer is a disease where cells in the breast tissue grow out of control, forming tumors. It's the most common cancer in women, and while less common in men, it can occur in both sexes.", "Eye twitching, also known as a myokymia or eyelid twitch, is a common and usually harmless condition where the eyelid muscle spasms involuntarily. It's often triggered by lifestyle factors like stress, fatigue, or excessive caffeine."]
+    
