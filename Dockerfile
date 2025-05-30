@@ -16,7 +16,6 @@ EXPOSE 8000
 
 # Copy application code
 COPY app ./app
-COPY models/fine_tuned ./models/fine_tuned
 
 # Run the application
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
