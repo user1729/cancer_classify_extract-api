@@ -7,7 +7,6 @@ class CancerClassifier:
         self.classifier = pipeline(
             "text-classification",
             model=model_path,
-            tokenizer="microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
             return_all_scores=True,
             device=0 if os.environ.get("USE_GPU", "false").lower() == "true" else -1,
         )
