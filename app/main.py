@@ -30,7 +30,7 @@ class BatchResponse(BaseModel):
 # Initialize models
 try:
     logger.info("Loading classification model...")
-    classification_pipeline = CancerClassifier("models/fine_tuned")
+    classification_pipeline = CancerClassifier("user1729/BiomedBERT-cancer-classifier-v1.0")
     
     logger.info("Loading extraction model...")
     extraction_pipeline = CancerExtractor()
