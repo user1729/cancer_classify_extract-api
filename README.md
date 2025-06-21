@@ -30,7 +30,7 @@ bash deploy.sh
 ```
 /docs -> /process - Try it out -> Replace "string" by - ["This study investigates novel biomarkers for early detection of lung cancer in non-smokers. Patients with breast cancer and melanoma showed improved outcomes."]
 Execute
-View Results
+View Results in Responses uncer /process
 ```
 
 
