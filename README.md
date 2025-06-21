@@ -23,9 +23,9 @@ bash deploy.sh
 
 ## Hugging Face Spaces:
 
-**Spaces:** [cancer_classify_extract-api](https://huggingface.co/spaces/user1729/cancer_classify_extract-api)
-**API Acess:** [Running-Access Endpoint](https://user1729-cancer-classify-extract-api.hf.space/docs) 
-**Example:**
+**Spaces:** [cancer_classify_extract-api](https://huggingface.co/spaces/user1729/cancer_classify_extract-api) <br>
+**API Acess:** [Running-Access Endpoint](https://user1729-cancer-classify-extract-api.hf.space/docs) <br>
+**Example:**<br>
 
 ```
 /docs -> /process - Try out -> Replace "string" by - ["This study investigates novel biomarkers for early detection of lung cancer in non-smokers. Patients with breast cancer and melanoma showed improved outcomes."]
