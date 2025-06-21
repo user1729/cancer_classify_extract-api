@@ -28,7 +28,7 @@ bash deploy.sh
 **Example:**<br>
 
 ```
-/docs -> /process - Try out -> Replace "string" by - ["This study investigates novel biomarkers for early detection of lung cancer in non-smokers. Patients with breast cancer and melanoma showed improved outcomes."]
+/docs -> /process - Try it out -> Replace "string" by - ["This study investigates novel biomarkers for early detection of lung cancer in non-smokers. Patients with breast cancer and melanoma showed improved outcomes."]
 Execute
 View Results
 ```
