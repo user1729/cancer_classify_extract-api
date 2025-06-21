@@ -1,12 +1,19 @@
-from transformers import pipeline
 import os
+# Avoid cache write permission errors in Hugging Face Spaces
+os.environ["HF_HOME"] = "/tmp/huggingface"
+os.environ["TRANSFORMERS_CACHE"] = "/tmp/huggingface/transformers"
+os.environ["HF_DATASETS_CACHE"] = "/tmp/huggingface/datasets"
 import re
+from transformers import AutoModelForSequenceClassification, AutoTokenizer, pipeline
 
 class CancerClassifier:
-    def __init__(self, model_path: str):
+    def __init__(self, model_path="user1729/BiomedBERT-cancer-bert-classifier-v1.0"):
+        model = AutoModelForSequenceClassification.from_pretrained(model_path)
+        tokenizer = AutoTokenizer.from_pretrained(model_path)
         self.classifier = pipeline(
             "text-classification",
-            model=model_path,
+            model=model,
+            tokenizer=tokenizer,
             return_all_scores=True,
             device=0 if os.environ.get("USE_GPU", "false").lower() == "true" else -1,
         )
@@ -22,7 +29,7 @@ class CancerClassifier:
         }
 
 class CancerExtractor:
-    def __init__(self, model_path ="alvaroalon2/biobert_diseases_ner"):
+    def __init__(self, model_path="alvaroalon2/biobert_diseases_ner"):
         self.extractor = pipeline(
             "ner",
             model=model_path,
